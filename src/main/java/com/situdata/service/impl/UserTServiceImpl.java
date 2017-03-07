@@ -16,11 +16,8 @@ public class UserTServiceImpl implements IUserTService {
     @Resource
     private UserTMapper userTMapper;
 
-    @Override
+
     public UserT getUserById(int userId) {
         return this.userTMapper.selectByPrimaryKey(userId);
     }
-
-
-
 }

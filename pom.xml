@@ -154,8 +154,7 @@
 
     </dependencies>
     <build>
-        <finalName>carPlatform</finalName>
-        <plugins>
+        <!--<plugins>-->
             <!--<plugin>-->
                 <!--<groupId>org.mybatis.generator</groupId>-->
                 <!--<artifactId>mybatis-generator-maven-plugin</artifactId>-->
@@ -181,21 +180,13 @@
                     <!--</dependency>-->
                 <!--</dependencies>-->
             <!--</plugin>-->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
-                </configuration>
-            </plugin>
-        </plugins>
+        <!--</plugins>-->
         <resources>
             <resource>
-                <directory>src/main/java</directory>
-                <includes>
-                    <include>**/*.xml</include>
-                </includes>
+                <directory>src/main/resources</directory>
+                <excludes>
+                    <exclude>mybatis-generator/*</exclude>
+                </excludes>
             </resource>
         </resources>
     </build>

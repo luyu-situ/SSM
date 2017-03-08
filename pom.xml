@@ -154,7 +154,7 @@
 
     </dependencies>
     <build>
-        <!--<plugins>-->
+        <plugins>
             <!--<plugin>-->
                 <!--<groupId>org.mybatis.generator</groupId>-->
                 <!--<artifactId>mybatis-generator-maven-plugin</artifactId>-->
@@ -180,7 +180,22 @@
                     <!--</dependency>-->
                 <!--</dependencies>-->
             <!--</plugin>-->
-        <!--</plugins>-->
+            <!-- Config: Maven Tomcat Plugin -->
+            <!-- http://mvnrepository.com/artifact/org.apache.tomcat.maven/tomcat7-maven-plugin -->
+            <!--<plugin>-->
+                <!--<groupId>org.apache.tomcat.maven</groupId>-->
+                <!--<artifactId>tomcat7-maven-plugin</artifactId>-->
+                <!--<version>2.2</version>-->
+                <!--&lt;!&ndash; Config: contextPath and Port (Default - /HelloSpringMVC : 8080) &ndash;&gt;-->
+                <!--&lt;!&ndash;-->
+                <!--<configuration>-->
+                    <!--<path>/</path>-->
+                    <!--<port>8899</port>-->
+                <!--</configuration>-->
+                <!--&ndash;&gt;-->
+            <!--</plugin>-->
+        </plugins>
+        <finalName>carPlatform</finalName>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
